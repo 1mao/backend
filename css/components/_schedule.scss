@@ -1,23 +1,6 @@
-@import '_mixin';
-@import '_normalize';
-//业务类
-.page {
-    padding: 42px 0 0 90px;
-    margin: 0 auto;
-}
-
-.page-content {
-    width: 1170px;
-}
-
-.header{
-    height: 46px;
-    line-height: 46px;
-    font-weight: 700;
-    font-size: 24px;
-    border-bottom: 2px solid #ccc;
-}
-
+// @import '../configs/_mixin';
+// @import '../configs/_normalize';
+/* 排期表 */
 .schedule {
     overflow: hidden;
     height: 650px;
@@ -34,13 +17,6 @@
     @extend .fl;
 }
 
-.pt-slide-menu {
-    ul{
-        li{
-            line-height: 28px;
-        }
-    }
-}
 
 .schedule-edit {
     width: 1050px;
@@ -62,6 +38,12 @@
     input {
         width: 90px;
         height: 25px;
+        &:nth-of-type(1){
+            @extend .fl;
+        };
+        &:nth-of-type(2){
+            @extend .fr;
+        };
     }
     p {
         @extend .fl;
@@ -71,12 +53,6 @@
         margin: 0 4px;
         @extend .fl;
     }
-}
-.data_start{
-    @extend .fl;
-}
-.data_end{
-    @extend .fl;
 }
 .chioce-state{
     @extend .clear;
@@ -157,7 +133,9 @@
             td {
                 padding: 17px 0 18px;
             }
+            background-color: #fff;
         }
+        background: #FDF2F2;
     }
     .cell-index {
         position: absolute;
@@ -190,103 +168,3 @@
         padding: 10px 0;
     }
 }
-
-#scroll_zone{
-	background: #FDF2F2;
-}
-#scroll_zone-item{
-	background-color: #fff;
-}
-
-.shadow {
-    z-index: 998;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .5;
-}
-
-.popup_detail {
-    overflow: hidden;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    min-width: 300px;
-    min-height: 200px;
-    background-color: #fff;
-    h3 {
-        padding-left: 10px;
-        line-height: 30px;
-        background-color: #32ccfe;
-        i {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-        }
-    }
-    .detail-info {
-        padding: 10px;  
-    }
-    p{
-        line-height: 24px;
-        i {
-            &:first-of-type{
-                margin-right: 30px;
-            }
-        }
-    }
-}
-
-.popup_prebook{
-    @extend .popup_detail;
-    .prebook-info {
-        @extend .detail-info;
-        .prebook-submit {
-            margin: 10px 0 0 110px;
-            padding: 6px 30px;
-        }
-    }
-    .prebook-filter {
-        @extend .clear;
-        @extend .fl;
-        input {
-            @extend .fl;
-            width: 90px;
-            height: 25px;
-        }
-        p {
-            @extend .fl;
-        }
-        i {
-            @extend .fl;
-            padding-top: 4px;
-            font-weight: bold;
-            margin: 0 4px;           
-        }
-    }
-    .prebook-tips {
-        padding-left: 96px;
-        color: #999;
-    }
-    .prebook-city {
-        @extend .clear;
-        margin-top: 10px;
-        line-height: 24px;
-        p {
-            @extend .fl;
-        }
-        select {
-            @extend .fl;
-            min-width: 200px;
-            font-size: 30px;
-        }
-    }   
-}
-

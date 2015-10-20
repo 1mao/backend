@@ -1,0 +1,38 @@
+// @import '../configs/_mixin';
+// @import '../configs/_normalize';
+/* 详情弹窗 */
+.popup_detail {
+    @extend .hide;
+    overflow: hidden;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: #fff;
+    h3 {
+        padding-left: 10px;
+        line-height: 30px;
+        background-color: #32ccfe;
+        i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+    .detail-info {
+        padding: 10px;  
+    }
+    p{
+        line-height: 24px;
+        i {
+            &:first-of-type{
+                margin-right: 30px;
+            }
+        }
+    }
+}

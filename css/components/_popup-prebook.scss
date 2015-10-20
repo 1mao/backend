@@ -1,0 +1,49 @@
+//@import '../configs/_mixin';
+//@import '../configs/_normalize';
+/* 弹窗预定 */
+.popup_prebook{
+    @extend .popup_detail;
+    @extend .hide;
+    .prebook-info {
+        @extend .detail-info;
+        .prebook-submit {
+            margin: 10px 0 0 110px;
+            padding: 6px 30px;
+        }
+    }
+    .prebook-filter {
+        @extend .clear;
+        @extend .fl;
+        input {
+            @extend .fl;
+            width: 90px;
+            height: 25px;
+        }
+        p {
+            @extend .fl;
+        }
+        i {
+            @extend .fl;
+            padding-top: 4px;
+            font-weight: bold;
+            margin: 0 4px;           
+        }
+    }
+    .prebook-tips {
+        padding-left: 96px;
+        color: #999;
+    }
+    .prebook-city {
+        @extend .clear;
+        margin-top: 10px;
+        line-height: 24px;
+        p {
+            @extend .fl;
+        }
+        select {
+            @extend .fl;
+            min-width: 200px;
+            font-size: 30px;
+        }
+    }   
+}

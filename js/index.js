@@ -2,7 +2,8 @@ window.onload=function(){
 	var scroll=new IScroll('#scroll_zone',{ 
 		scrollX: true, 
 		scrollY: false, 
-		mouseWheel: true 
+		mouseWheel: true,
+		scrollbars: true, 
 	});
 	
 	var date_start=new JsDatePick({

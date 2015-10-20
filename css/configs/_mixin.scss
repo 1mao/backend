@@ -1,4 +1,4 @@
-//视觉类
+/* 视觉类 */
 .clear:after {
     content: "";
     display: block;
@@ -43,4 +43,12 @@ dt {
 
 dd {
     padding-left: 14px;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
 }
