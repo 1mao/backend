@@ -10,7 +10,7 @@
     width: 1170px;
 }
 
-.pt-header{
+.header{
     height: 46px;
     line-height: 46px;
     font-weight: 700;
@@ -18,14 +18,14 @@
     border-bottom: 2px solid #ccc;
 }
 
-.pt-main {
+.schedule {
     overflow: hidden;
     height: 650px;
     padding-top: 10px;
     @extend .clear;
 }
 
-.pt-side-menu {
+.schedule-menu {
     width: 100px;
     height: 550px;
     padding-top: 20px;
@@ -42,12 +42,12 @@
     }
 }
 
-.pt-body {
+.schedule-edit {
     width: 1050px;
     padding: 20px 0 0 15px;
     @extend .fl;
 }
-.exl-filter {
+.edit-chioce {
     line-height: 28px;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -55,7 +55,7 @@
     @extend .clear;
 }
 
-.time-filter{
+.chioce-date{
     width:600px;
     @extend .clear;
     @extend .fl;
@@ -63,9 +63,13 @@
         width: 90px;
         height: 25px;
     }
+    p {
+        @extend .fl;
+    }
     i {
         font-weight: bold;
         margin: 0 4px;
+        @extend .fl;
     }
 }
 .data_start{
@@ -74,7 +78,7 @@
 .data_end{
     @extend .fl;
 }
-.color-info{
+.chioce-state{
     @extend .clear;
     @extend .fr;
 
@@ -112,10 +116,10 @@
     }
 
 }
-.exl-main{
+.edit-chart{
     @extend .clear;
 }
-.exl-slide-menu {
+.chart-menu {
     width: 140px;
     height: 477px;
     padding: 10px;
@@ -123,20 +127,21 @@
     @extend .fl;
 }
 
-.exl-cont {
+.chart-cell {
     position: relative;
     width: 876px;
     height: 499px;
     padding-left: 10px;
     @extend .fl;
     @extend .clear;
-    .scroll {
+    .cell-right {
+        @extend .fl;
         overflow: hidden;
         /*position: absolute;*/
         width: 649px;
         border-right: 1px solid #999;
     }
-    .scroll {
+    .cell-right {
         table {
             margin-left: -2px;
             th {
@@ -150,11 +155,11 @@
                 background-color: #32ccfe;
             }
             td {
-                height: 15px;
+                padding: 17px 0 18px;
             }
         }
     }
-    .page {
+    .cell-index {
         position: absolute;
         width: 865px;
         height: 30px;
@@ -171,7 +176,7 @@
     }
 }
 
-.table {
+.cell-left {
     border-color: #ddd;
     text-align: center;
     @extend .fixed;
@@ -204,7 +209,7 @@
     opacity: .5;
 }
 
-.popup-window {
+.popup_detail {
     overflow: hidden;
     z-index: 999;
     top: 50%;
@@ -226,37 +231,62 @@
             cursor: pointer;
         }
     }
-    .cont {
-        padding: 10px;
-        .submit {
-            margin: 10px 0 0 110px;
-            padding: 6px 30px;
-        }
+    .detail-info {
+        padding: 10px;  
     }
-}
-
-.info {
-     p{
+    p{
         line-height: 24px;
         i {
             &:first-of-type{
                 margin-right: 30px;
             }
         }
-     }
-     .book{
-        .tips {
-            padding-left: 96px;
-            color: #999;
+    }
+}
+
+.popup_prebook{
+    @extend .popup_detail;
+    .prebook-info {
+        @extend .detail-info;
+        .prebook-submit {
+            margin: 10px 0 0 110px;
+            padding: 6px 30px;
         }
-        .city {
-            margin-top: 10px;
-            line-height: 24px;
-            select {
-                min-width: 200px;
-                font-size: 30px;
-            }
+    }
+    .prebook-filter {
+        @extend .clear;
+        @extend .fl;
+        input {
+            @extend .fl;
+            width: 90px;
+            height: 25px;
         }
-     }
+        p {
+            @extend .fl;
+        }
+        i {
+            @extend .fl;
+            padding-top: 4px;
+            font-weight: bold;
+            margin: 0 4px;           
+        }
+    }
+    .prebook-tips {
+        padding-left: 96px;
+        color: #999;
+    }
+    .prebook-city {
+        @extend .clear;
+        margin-top: 10px;
+        line-height: 24px;
+        p {
+            @extend .fl;
+        }
+        select {
+            @extend .fl;
+            min-width: 200px;
+            font-size: 30px;
+        }
+    }   
 }
 
