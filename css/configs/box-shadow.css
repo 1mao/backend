@@ -1,71 +1,15 @@
-/* 视觉类 */
-
-.clear:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.box h3{
+    text-align:center;
+    position:relative;
+    top:80px;
+}
+.box {
+    width:70%;
+    height:200px;
+    background:#FFF;
+    margin:40px auto;
 }
 
-.clear {
-    zoom: 1;
-}
-
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
-.pr {
-    position: relative;
-}
-
-.pa {
-    position: absolute;
-}
-
-.table {
-    border: 1px solid #ccc;
-}
-
-.book-bg {
-    background-color: #33ccff;
-}
-
-.free-bg {
-    background-color: #fff;
-}
-
-.sold-bg {
-    background-color: #00ff66;
-}
-
-.part-bg {
-    background-color: #cc00ff;
-}
-.td{
-    border: 1px solid #ccc;
-}
-
-.hc{
-    margin: 0 auto;
-}
-.shadow {
-    position: relative;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
 /*==================================================
  * Effect 1
  * ===============================================*/
@@ -247,9 +191,10 @@
 /*==================================================
  * Effect 8
  * ===============================================*/
-.effect8 {
-    position: relative;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0.1) inset;
+.effect8
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .effect8:before, .effect8:after
 {

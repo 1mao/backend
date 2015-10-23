@@ -1,0 +1,15 @@
+.material{
+	.material-item{
+		width: 100%;
+		@extend .table;
+		td{
+			@extend .td;
+			img{
+				@extend .hc;
+			}
+		}
+		th{
+			@extend .td;
+		}
+	}
+}

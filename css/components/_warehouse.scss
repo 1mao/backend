@@ -1,0 +1,12 @@
+.warehouse{
+	.warehouse-item{
+		width: 100%;
+		@extend .table;
+		td{
+			@extend .td;
+		}
+		th{
+			@extend .td;
+		}
+	}
+}

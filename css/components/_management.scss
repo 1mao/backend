@@ -1,0 +1,27 @@
+// @import '../configs/_mixin';
+// @import '../configs/_normalize';
+/* 排期表 */
+.manage {
+    overflow: hidden;
+    height: 650px;
+    padding-top: 10px;
+
+    @extend .clear;
+    .manage-menu {
+        width: 10%;
+        min-width: 100px;
+        min-height: 100%;
+        padding-top: 20px;
+        font-size: 16px;
+        border-right: 2px solid #ccc;
+        @extend .fl;
+    }
+    .manage-bd{
+        width: 89%;
+        min-width: 900px;
+        min-height: 100%;
+        padding-top:20px;
+        background-color: #FBF4F4;
+        @extend .fr;
+    }
+}
