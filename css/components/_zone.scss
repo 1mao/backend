@@ -1,6 +1,22 @@
 /* 广告位 */
 .zone{
 	.zone-select{
+		padding: 6px 14px;
 		background-color:#F5F5F5;
+		border: 1px solid #e7e7e7;
+		font-size: 14px;
+		color: #4c4c4c;
+		span:last-of-type {
+			margin-left: 30px;
+		}
+		select {
+			min-width: 138px;
+			border: 1px solid #6cc3e4;
+		}
 	}
+	.zone-size {
+		padding-top: 24px;
+		line-height: 24px;
+		color: #8f8f8f;
+	}	
 }

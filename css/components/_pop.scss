@@ -1,0 +1,133 @@
+.pop {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -342px;
+	max-width: 700px;
+	background-color: #fff;
+	border: 1px solid #b3b3b3;
+	box-shadow: 3px 3px 5px #ececec;
+
+	form h3 {
+		@extend .pr;
+		padding-left: 10px;
+		line-height: 38px;
+		background-color: #6ec9ee;
+		color: #fff;
+		i {
+			@extend .pa;
+			right: 10px;
+			padding: 0 10px;
+			font-size: 26px;
+			cursor: pointer;
+		}
+	}
+	form > div {
+		@extend .pr;
+		@extend .clear;
+		padding: 34px 14px 74px;
+		.pop-button {
+			min-width: 80px;
+			padding: 0 12px;
+			background-color: #e5e5e5;
+			border: none;
+			cursor: pointer;
+		}
+		label {
+			vertical-align: center;
+			cursor: pointer;
+		}
+		label input {
+			margin-right: 4px;
+		}
+		&>span {
+			float: left;
+			width: 100%;
+			height: 30px;
+			margin: 20px 0;
+			background-color: #f2f2f2;
+		}
+		&>input.pop-button {
+			@extend .pa;
+			left: 50%;
+			bottom: 40px;
+			margin-left: -60px;
+			min-width: 120px;
+			color: #fff;
+			background-color: #27a7d7;
+		}
+		div {
+			line-height: 34px;
+			margin-top: 10px;
+		}
+		div:first-of-type {
+			padding-bottom: 15px;
+		}
+		div:nth-of-type(-n+3) {
+			span input {
+				min-width: 512px;
+			}
+		}
+		div:nth-of-type(5) {
+			i {
+				margin-top: 74px;
+			}
+			span input:first-of-type {
+				min-width: 196px;
+			}
+			span .pop-button {
+				margin: 0 20px 0 10px;
+			}
+			span img {
+				vertical-align: bottom;
+			}
+		}
+		div:nth-of-type(6) {
+			span input:first-of-type {
+				min-width: 428px;
+			}
+			span label {
+				margin-left: 120px;
+				cursor: pointer;
+			}
+		}
+		div:nth-of-type(7) {
+			span input:first-of-type {
+				min-width: 428px;
+			}
+		}
+		div:nth-of-type(9) {
+			span>input{
+				width:100px;
+				margin-right: 10px;
+			}
+		}
+		div:nth-of-type(10) {
+			@extend .clear;
+			span {
+				@extend .fl;
+				select {
+					min-width: 160px;
+					line-height: 38px;
+				}
+			}
+			& > div {
+				@extend .fl;
+				min-width: 510px;
+				min-height: 80px;
+				margin-left: 120px;
+				border: 1px solid #ccc;
+			}
+		}
+		i {
+			@extend .fl;
+			min-width: 120px;
+			text-align: right;
+			font-weight: bold;
+		}
+		input {
+			line-height: 32px;
+		}
+	}
+}

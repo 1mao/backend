@@ -1,15 +1,34 @@
 .material{
 	.material-item{
 		width: 100%;
-		@extend .table;
-		td{
-			@extend .td;
-			img{
-				@extend .hc;
+		text-align: center;
+		color: #4d4d4d;
+		tr {
+			border: 1px solid #f2f2f2;
+			th {
+				line-height: 36px;
+			}
+			td {
+				padding-bottom: 10px;
+			}
+			td:first-of-type span {
+				line-height: 36px;
+			}
+			td:not(:first-child) {
+				line-height: 36px;
+			}
+			td a {
+				color: #005580;
+				i {
+					color: #4d4d4d;
+				}
 			}
 		}
-		th{
-			@extend .td;
+		tr:nth-of-type(odd) {
+			background-color: #f2f2f2;
+		}
+		td{
+			
 		}
 	}
 }
